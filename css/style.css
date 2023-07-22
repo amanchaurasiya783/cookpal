@@ -1,0 +1,342 @@
+@import url(variable.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-white);
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    max-width: 1800px;
+    padding: 0 40px;
+    margin: auto;
+}
+
+header{
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+
+.left-menu{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.right-menu{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+
+.drawer-icon{
+    font-size: 1.2rem;
+}
+
+.logo{
+    width: 96px;
+    height: 46px;
+    top: 17px;
+    left: 135px;
+}
+
+.user-profile{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 60px;
+    padding: 10px;
+}
+
+ul li a{
+    text-decoration: none;
+    font-weight: var(--fw-500);
+    color: var(--color-green73);
+}
+
+/* -------------------------------------banner styling------------------------------------- */
+
+.banner{
+    margin: 20px 0 10px 0;
+    display: flex;
+    padding-left: 100px;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    border-radius: 30px;
+    background-image: url("../images/banner.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.banner .detail{
+    width: 350px;
+}
+
+.banner .detail p{
+    color: var(--color-white);
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.banner .detail h1{
+    color: var(--color-white);
+    font-size: 2rem;
+    line-height: 38px;
+}
+
+/* -------------------------------------search section styling------------------------------------- */
+
+.search-section{
+    margin: 20px 0;
+}
+
+.search-section h2{
+    font-size: 1.2rem;
+    padding: 10px 0;
+}
+
+.search-box{
+    display: flex;
+}
+
+.search-box input{
+    width: 100%;
+    background-color: var(--color-grey243);
+    outline: none;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+.search-box .search-icon{
+    padding: 10px 15px;
+    float: right;
+    background-color: var(--color-green158);
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* -------------------------------------recipes-filter-section styling------------------------------------- */
+
+.recipes-filter-section{
+    margin: 30px 0;
+    display: flex;
+    gap: 15px;
+    color: var(--color-white);
+}
+
+.recipes-filter-section .recipe-button{
+    width: 200px;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+
+/* -------------------------------------main styling------------------------------------- */
+
+/* input:checked{
+    background-color: black;
+  } */
+
+main{
+    display: flex;
+}
+
+aside{
+    flex-grow: 1;
+    padding: 10px;
+}
+
+aside h3{
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+aside h5{
+    margin: 10px 0 10px 0;
+    font-size: 1.1rem;
+}
+
+aside p{
+    margin: 10px 0;
+    color: var(--color-grey71);
+}
+
+.recipes{
+    flex-grow: 5;
+    display: flex;
+}
+
+.recipes .card {
+    width: 305px;
+    border: 1px solid var(--color-grey243);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 315px;
+    border-radius: 16px;
+    gap: 8px;
+    transition: 0.4s ease;
+}
+
+.recipes .card:hover{
+    transform: scale(1.05);
+    border: 3px solid var(--color-grey243);
+}
+
+.card .image{
+    width: 289px;
+    height: 200px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.card .detail{
+    width: 100%;
+}
+
+.dish-name{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+}
+
+.fa-star{
+    color: var(--color-yellow64);
+}
+
+.dish-name h3{
+    color: var(--color-red220);
+}
+
+.card .rating{
+    align-items: center;
+    display: flex;
+    gap: 5px;
+}
+
+span{
+    font-size: 0.8rem;
+    color: var(--color-grey71);
+}
+
+/* -------------------------------------footer styling------------------------------------- */
+
+.footer{
+    width: 100%;    
+    background-color: var(--color-grey243);
+}
+
+.footer-details{
+    display: flex;
+    margin: 50px 0 30px;
+    justify-content: space-between;
+    gap: 30px;
+    color: var(--color-grey71);
+    font-weight: var(--fw-500);
+}
+
+.footer-details .info{
+    width: 30%;
+}
+
+.footer-details .info .logo{
+    padding: 5px 0;
+}
+
+.footer-details .info p{
+    padding: 5px 0;
+}
+
+
+.footer-details .info .email-section{
+    padding: 5px 0;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.footer-details .info input, .email-section button{
+    padding: 10px 15px;
+    border-radius: 5px;
+    outline: none;
+    background-color: var(--color-grey243);
+    border: none;
+}
+
+.footer-details .info input{
+    width: 100%;
+}
+
+.email-section button{
+    background-color: var(--color-green158);
+    color: var(--color-white);
+    font-size: 0.8rem;
+}
+
+.footer-details .company{
+    list-style-type: none;
+    line-height: 2.2rem;
+}
+
+.footer-details .company h3{
+    color: var(--color-black);
+}
+
+footer .footbar{
+    margin-bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.footbar div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-grey71);
+    color: white;
+    border-radius: 50%;
+}
+
+/* -------------------------------------responsive styling------------------------------------- */
+
+@media all and (max-width: 700px){
+    
+}

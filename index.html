@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width-device-width, initial-scale-1.0">
+        <title>Cookpal</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/e68e341bd2.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <nav>
+                    <div class="left-menu">
+                        <div class="drawer-icon"><i class="fa-solid fa-bars"></i></div>
+                        <div class="logo"><a href="#"><img src="images/logo.jpg" alt="logo"></a></div>
+                    </div>
+                    <div class="right-menu">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Explore</a></li>
+                        <li><a href="">Help</a></li>
+                    </ul>
+                    <div class="user-profile"><img src="images/boss-baby.jpg" alt="user photo"></div>
+                    </div>
+                </nav>
+                <div class="banner">
+                    <div class="detail">
+                        <p class="">Trending Now</p>
+                        <h1>Mike's famous salad with cheese</h1>
+                        <p class="">By John Mike</p>
+                    </div>
+                </div>
+                <section class="search-section">
+                    <h2 class="search-text">Search For Recipes</h2>
+                    <div class="search-box">
+                        <input type="text" id="search" placeholder="Search for recipes ..." required/>
+                        <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    </div>
+                </section>
+                <div class="recipes-filter-section">
+                    <div class="recipe-button" id="0">
+                        <p>All Recipes</p>
+                        <p>></p>
+                    </div>
+                    <div class="recipe-button" id="1">
+                        <p>Veg Recipes Only</p>
+                        <p>></p>
+                    </div>
+                    <div class="recipe-button" id="2">
+                        <p>Non Veg Recipes Only</p>
+                        <p>></p>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <aside>
+                    <h3>Filters</h3>
+                    <h5>Rating</h5>
+                    <p><label for="rating-above"><input type="checkbox" id="rating-above"> 4 and Above</label></p>
+                    <p><label for="rating-below"><input type="checkbox" id="rating-below"> Below 4</label></p>
+                </aside>
+                <div class="recipes">
+                    <div class="card">
+                        <div class="image"><img src="images/boss-baby.jpg" alt="dish image"></div>
+                        <div class="detail">
+                            <span id="" class="dish_type">Veg</span>
+                            <div class="dish-name">
+                                <h3 style="color: black;">Russian Salad</h3>
+                                <div class="rating">
+                                    <i class="fa-sharp fa-solid fa-star"></i><span>4.5</span>
+                                </div>
+                            </div>
+                            <div class="dish-name">
+                                <h3>40 min</h3>
+                                <div class="rating">
+                                    <i class="fa-sharp fa-regular fa-heart"></i>
+                                    <i class="fa-sharp fa-regular fa-comment"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div class="footer-details">
+                    <div class="info">
+                        <div class="logo">
+                            <img src="images/logo.jpg" alt="logo">
+                        </div>
+                        <p>Cookpal is a recipe website with a wide variety of delicious recipes, easy-to-use search function. Join our community and let's cook together!</p>
+                    </div>
+                    <div class="company">
+                        <h3>Company</h3>
+                        <li>Home</li>
+                        <li>Explore</li>
+                        <li>Team</li>
+                        <li>About Us</li>
+                        <li>Activity</li>
+                    </div>
+                    <div class="company">
+                        <h3>Resources</h3>
+                        <li>Blog</li>
+                        <li>Use Cases</li>
+                        <li>Testimonials</li>
+                        <li>Insights</li>
+                    </div>
+                    <div class="info">
+                        <div class="logo">
+                            <img src="images/logo.jpg" alt="logo">
+                        </div>
+                        <p>Ut risus mattis interdum faucibus facilisi. <br> Facilisi purus accumsan aliquam.</p>
+                        <div class="email-section">
+                            <input type="email" placeholder="Your Email">
+                            <button>Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footbar">
+                    <div><i class="fa-brands fa-instagram"></i></div>
+                    <div><i class="fa-brands fa-twitter"></i></div>
+                    <div><i class="fa-brands fa-linkedin-in"></i></div>
+                    <div><i class="fa-brands fa-facebook-f"></i></div>
+                </div>
+            </footer>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
